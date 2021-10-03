@@ -13,6 +13,28 @@ body {
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
 }
 
+.aside1{ 
+    width: 25%;
+    padding-left: 1em;
+    padding-right: 2em;
+
+}
+
+.mainTot{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.Search{
+    padding-left: 2em;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -20,6 +42,10 @@ a {
 
 .wrapper {
     padding: 25px 0;
+    padding-left: 1em;
+    padding-right: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 body > header {
@@ -30,6 +56,7 @@ body > header {
 
 header .logo-search form  {
     width: 50%;
+    min-width: 20%;
 }
 
 header .user {
@@ -88,6 +115,11 @@ h1 {
     font-size: 24px;
     font-weight: normal;
     margin: 0 0 8px 0;
+}
+
+.name-photo{
+    display: flex;
+    float: row;
 }
 
 .name p { 
@@ -216,6 +248,10 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
-
+@media screen and (max-width: 600px) {
+    .aside1{display: none}
+    main{padding-left: 1em;}
+    
+}
 
 
